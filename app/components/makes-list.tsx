@@ -6,7 +6,7 @@ import FilterForm from '@/app/components/filter-form';
 const fetchMakes = async (): Promise<Make[] | Error> => {
   try {
     const res = await fetch(
-      'https://vpic.nhtsa.dot.govs/api/vehicles/GetMakesForVehicleType/car?format=json'
+      'https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json'
     );
 
     if (!res.ok) {
