@@ -1,6 +1,6 @@
-import { Suspense } from "react";
+import { Suspense } from 'react';
 
-import MakesList from "@/app/components/makes-list";
+import MakesList from '@/app/components/makes-list';
 
 const HomePage = () => (
   <main className="flex flex-col gap-4 justify-center items-center min-h-screen">

@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import Link from "next/link";
-import clsx from "clsx";
+import { useMemo, useState } from 'react';
+import Link from 'next/link';
+import clsx from 'clsx';
 
-import { Make } from "@/types";
+import { Make } from '@/types';
 
 type Props = {
   makes: Make[];
