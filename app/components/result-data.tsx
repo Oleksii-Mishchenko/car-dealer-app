@@ -1,5 +1,5 @@
 import { ApiResponse, Vehicle } from '@/types';
-import ErrorMessage from './error';
+import ErrorMessage from '@/app/components/error';
 
 type Props = {
   params: {
