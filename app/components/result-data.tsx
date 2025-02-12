@@ -1,4 +1,5 @@
 import { ApiResponse, Vehicle } from '@/types';
+import ErrorMessage from './error';
 
 type Props = {
   params: {
@@ -36,11 +37,7 @@ const ResultData: React.FC<Props> = async ({ params }) => {
   const result = await fetchModels(makeId, year);
 
   if (result instanceof Error) {
-    return (
-      <div className="text-red-500 text-center p-4 bg-red-100 rounded-lg">
-        <p>❌ Error: {result.message}</p>
-      </div>
-    );
+    return <ErrorMessage message={result.message} />;
   }
 
   return (
